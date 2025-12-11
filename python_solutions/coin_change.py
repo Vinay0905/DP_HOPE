@@ -1,0 +1,27 @@
+def coin_change(coins,amount):
+    n=len(coins)
+    dp=[[0]*(amount+1) for _ in range(n+1)]
+    for r in range(amount+1):
+        dp[0][r]=amount+1
+        
+    
+    dp[0][0]=0
+    
+    for i in range(1,n+1):
+        for j in range(1,amount+1):
+            if coins[i-1]<=j:
+                dp[i][j]=min(1+dp[i][j-coins[i-1]],dp[i-1][j])
+                
+            else:
+                dp[i][j]=dp[i-1][j]
+                
+    print( dp[n][amount] if dp[n][amount] != amount + 1 else -1 )
+    
+
+
+coin_change([1,2,5],11)
+
+    
+    
+    
+    
