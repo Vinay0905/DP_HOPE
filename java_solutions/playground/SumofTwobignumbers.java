@@ -26,9 +26,9 @@ public class SumofTwobignumbers {
 
     }
     public static void main(String[] args) {
-        int a=12;
+        //int a=12;
         int[] n1={9,2,8,1,3,5,6,7,3,1,1,6};
-        int b=9;
+        //int b=9;
         int[] n2={7,8,4,6,2,1,9,9,7};
         int[] sum = addtwonumbers(n1, n2);
         System.out.print("Sum of the two numbers: ");
