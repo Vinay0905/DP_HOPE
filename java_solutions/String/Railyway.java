@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Railyway {
 
     public static void main(String[] args) {
+        long startTime = System.nanoTime();
+
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         char[] c = str.toCharArray();
@@ -27,5 +29,10 @@ public class Railyway {
         }
         System.out.println(new String(c, 0, n-2));
         sc.close();
+        long endTime = System.nanoTime();
+        long executionTime = endTime - startTime;
+
+        System.out.println("Execution time: " + executionTime + " ns");
+        System.out.println("Execution time: " + (executionTime / 1_000_000.0) + " ms");
     }
 }
