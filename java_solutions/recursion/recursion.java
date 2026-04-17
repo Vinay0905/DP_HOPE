@@ -18,9 +18,11 @@ public class recursion{
         System.out.println(sumofdigits(1756,0));
         System.out.println(reverseNumber(1764, 0));
         System.out.println(palindrome(121, 0, 121));
-        int[] arr = {10, 20, 30, 40, 50};
+        int[] arr = {10, 20, 90, 40, 50};
         
         recursion_display(arr, 0);
+        
+        System.out.println(checAraaySortedOrNot(arr, 0));
 
     }
     public static int sumofN(int n){
@@ -54,6 +56,7 @@ public class recursion{
         return palindrome(n/10, rev*10+(n%10), org);
     }
     public static void recursion_display(int[] arr,int i){
+
         if(i==arr.length){
             return;
         }
@@ -62,5 +65,16 @@ public class recursion{
 
         
 
+    }
+    public static boolean checAraaySortedOrNot(int[] arr,int i){
+        if(i==arr.length-1){
+            
+            return true;
+        }
+        if(arr[i]>arr[i+1]){
+            
+            return false;
+        }
+        return checAraaySortedOrNot(arr, i+1);
     }
 }
