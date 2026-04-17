@@ -1,3 +1,4 @@
+package java_solutions.DP;
 import java.util.*;
 
 public class counting_bits {

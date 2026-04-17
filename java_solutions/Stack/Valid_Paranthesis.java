@@ -1,3 +1,5 @@
+package java_solutions.Stack;
+
 class Stack {
     private java.util.Stack<Character> stack = new java.util.Stack<>();
 

@@ -1,4 +1,4 @@
-
+package java_solutions.DP;
 public class minCostClimbingStairs {
     public static void main(String[] args) {
         int cost[] = { 30, 10, 60, 10, 60, 50 };

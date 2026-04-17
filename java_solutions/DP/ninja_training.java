@@ -1,3 +1,4 @@
+package java_solutions.DP;
 public class ninja_training {
     public static void main(String[] args) {
         int points[][] = { { 10, 40, 70 }, { 20, 50, 80 }, { 30, 60, 90 } };

@@ -1,3 +1,5 @@
+package java_solutions.Stack;
+
 import java.util.*;
 
 class ArrayStack {

@@ -1,3 +1,4 @@
+package java_solutions.DP;
 public class number_of_wayofpairing {
     public static void main(String[] args) {
         int n = 4;

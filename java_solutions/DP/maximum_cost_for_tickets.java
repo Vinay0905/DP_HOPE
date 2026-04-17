@@ -1,4 +1,4 @@
-
+package java_solutions.DP;
 public class maximum_cost_for_tickets {
     public static void main(String[] args) {
         int days[] = { 1, 4, 6, 7, 8, 20 };
