@@ -1,3 +1,5 @@
+package java_solutions.DP;
+
 public class coin_change {
     public static void main(String[] args) {
         int coins[] = { 1, 2, 5 };

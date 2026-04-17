@@ -1,4 +1,4 @@
-package java_solutions.dp;
+package java_solutions.DP;
 
 public class climbing_stairs {
     public static void main(String[] args) {
