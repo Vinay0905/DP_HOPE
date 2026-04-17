@@ -1,3 +1,5 @@
+package java_solutions.dp;
+
 public class climbing_stairs {
     public static void main(String[] args) {
         int n = 3;

@@ -31,7 +31,6 @@ public class MinimumDaystoMakeBouquet {
             maxDay = Math.max(maxDay, bloom);
         }
 
-        int n = arr.length;
         // binary search over days, not indices
         int l = minDay, h = maxDay, res = -1;
 
