@@ -4,7 +4,6 @@
 
 [Submission Link For Question 1](https://drive.google.com/file/d/1bbN66B103b2kEz2ApXIazmWur6oKCeP8/view?usp=drive_link)
 
-
 ```python
 t = input().strip()
 print(t + "s")
@@ -18,7 +17,6 @@ Simple string concatenation.
 ## Setsubun
 
 [Submission Link For Question 2](https://drive.google.com/file/d/1DbHDioVUs5l7bXTwOGYQ0QdA8E95I70q/view?usp=drive_link)
-
 
 ```python
 n, k = map(int, input().split())
@@ -46,7 +44,6 @@ Solve using the quadratic equation directly (O(1)), but binary search avoids flo
 ## Chokutter Addiction
 
 [Submission Link For Question 3](https://drive.google.com/file/d/1nFfQb8dTUKJFh81uGIDUMH1jS7TY717q/view?usp=sharing)
-
 
 ```python
 n, t = map(int, input().split())
@@ -82,8 +79,6 @@ Treat each viewing period as a time interval `[L, R)` and scan Aoki’s passes i
 ## Pawn Line
 
 [Submission Link For Question 4](https://drive.google.com/file/d/12WJnQMsBnoaJgqeScLTwqARV1rzwAJbi/view?usp=sharing)
-
-
 
 ```python
 t = int(input())
