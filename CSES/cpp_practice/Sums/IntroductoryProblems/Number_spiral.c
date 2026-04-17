@@ -1,57 +1,30 @@
-// #include <stdio.h>
-// #include <string.h>
-
-
-// int main(){
-//     int t;
-//     scanf("%d",&t);
-//     for (int i=0;i<t;i++){
-//         int y,x;
-//         scanf("%d %d",&y,&x);
-//         long long n=(y>x)? y:x;
-//         long long base =n*n-n+1;
-//         long long ans;
-//         if (n%2==0){
-//             if(y==n){
-//                 ans=base-(x-y);
-//             }
-//             else{
-//                 ans=base+(y-x);
-
-//             }
-
-//         }
-//         else{
-//             if (x==n){
-//                 ans=base-(y-x);
-//             }
-//             else{
-//                 ans=base+(x-y);
-//             }
-//         }
-//         printf("%lld\n",ans);
-
-
-//     }
-//     return 0;
-// }
 #include <stdio.h>
 
+typedef long long ll;
+
+int T;
+ll X, Y;
+
+ll solve(ll x, ll y) {
+    ll l = (x > y ? x : y) - 1;
+    if (l & 1) {
+        if (x < y)
+            return l * l + x;
+        else
+            return l * l + 2 * l - y + 2;
+    } else {
+        if (x < y)
+            return l * l + 2 * l - x + 2;
+        else
+            return l * l + y;
+    }
+}
+
 int main() {
-    int t;
-    scanf("%d", &t);
-    for(int i = 0; i < t; i++) {
-        long long r, c;
-        scanf("%lld %lld", &r, &c);
-        long long mx = (r > c ? r : c);
-        long long mn = (r < c ? r : c);
-        long long ans = mx * mx;
-        if ((mx % 2) == (mn % 2)) {
-            ans -= (mx - mn);
-        } else {
-            ans += (mx - mn);
-        }
-        printf("%lld\n", ans);
+    if (scanf("%d", &T) != 1) return 0;
+    for (int t = 0; t < T; t++) {
+        if (scanf("%lld %lld", &X, &Y) != 2) return 0;
+        printf("%lld\n", solve(X, Y));
     }
     return 0;
 }
