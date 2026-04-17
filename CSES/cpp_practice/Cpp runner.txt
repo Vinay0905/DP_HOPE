@@ -1,0 +1,4 @@
+g++ testing.cpp -o testing
+g++ <source_file.cpp> -o <output_name>
+./<output_name>
+.\testing
