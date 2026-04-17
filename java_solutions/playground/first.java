@@ -1,6 +1,7 @@
 package java_solutions.playground;
 import java.util.Scanner;
 
+
 public class first {
     public static long reverse(long x){
         long num=0;
