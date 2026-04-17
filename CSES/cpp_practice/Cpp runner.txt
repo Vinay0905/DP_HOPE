@@ -1,4 +1,7 @@
 g++ testing.cpp -o testing
 g++ <source_file.cpp> -o <output_name>
 ./<output_name>
-.\testing
+(.\testing or ./testing both of them work)
+
+for C 
+using gcc instead of g++ ,rest everything is same
