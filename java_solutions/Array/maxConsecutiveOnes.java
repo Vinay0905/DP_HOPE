@@ -17,9 +17,23 @@ public class maxConsecutiveOnes {
         return max;
 
     }
+    public static int bruteforce(int[] arr){
+        int max=0;
+        int cnter=0;
+        for(int i:arr){
+            if(i==1){
+                cnter++;
+                max=Math.max(max,cnter);
+            }
+            else{
+                cnter=0;
+            }
+        }
+        return max;
+    }
     public static void main(String[] args) {
         int[] nums = {1,1,0,1,1,1};        
-        int ans=function(nums);
+        int ans=bruteforce(nums);
         System.err.println(ans);
 
     }
