@@ -1,0 +1,82 @@
+package java_solutions.Array;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NextPermutation {
+
+     private static void generatePermutations(
+            int[] arr,
+            boolean[] used,
+            List<Integer> current,
+            List<List<Integer>> ans
+    ) {
+        if (current.size() == arr.length) {
+            ans.add(new ArrayList<>(current));
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (!used[i]) {
+                current.add(arr[i]);
+                used[i] = true;
+
+                generatePermutations(arr, used, current, ans);
+
+                used[i] = false;
+                current.remove(current.size() - 1);
+            }
+        }
+    }
+    public static void bruteforce(int[] arr){
+        List<List<Integer>> ans=new ArrayList<>();
+        boolean[] used=new boolean[arr.length];
+        generatePermutations(arr,used,new ArrayList<>(),ans);
+        System.out.println(ans);
+
+    }
+
+
+
+    public static void optimalSolution(int[] arr){
+        int idx=-1;
+        int n=arr.length;
+        for(int i=n-2;i>=0;i--){
+            if(arr[i]<arr[i+1]){
+                idx=i;
+                break;
+            }
+        }
+        if (idx == -1) {
+        reverse(arr, 0, n - 1);
+        return;
+    }
+        for(int i=n-1;i>=0;i--){
+            if(arr[i]>arr[idx]){
+                int temp=arr[i];
+                arr[i]=arr[idx];
+                arr[idx]=temp;
+                break;
+            }
+        }
+        reverse(arr, idx + 1, n - 1);
+
+    }
+    private static void reverse(int[] arr, int left, int right) {
+    while (left < right) {
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+
+        left++;
+        right--;
+    }
+}
+    public static void main(String[] args) {
+        int Arr[] = {3,2,1};
+        optimalSolution(Arr);
+        for(int i:Arr){
+            System.out.print(i+" ");
+        }
+    }
+}
