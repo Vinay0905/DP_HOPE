@@ -15,3 +15,4 @@ public class ArraySorted {
         System.out.println(ans);
     }
 }
+
