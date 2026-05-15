@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Medium;
 public class SortArraysZeroOneTwo {
     public static void bruteforce(int[] arr){
         int cnt0=0,cnt1=0,cnt2=0;

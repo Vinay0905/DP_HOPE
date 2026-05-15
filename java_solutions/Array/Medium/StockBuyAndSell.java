@@ -1,4 +1,4 @@
-package java_solutions.Array;
+package java_solutions.Array.Medium;
 //121. Best Time to Buy and Sell Stock
 public class StockBuyAndSell {
     public static int bruteForce(int[] prices){

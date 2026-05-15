@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Medium;
 import java.util.HashMap;
 import java.util.Map;
 public class MajorityAccorssThearrays {

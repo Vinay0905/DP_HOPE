@@ -1,4 +1,4 @@
-package java_solutions.Array;
+package java_solutions.Array.Medium;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Easy;
 public class singlenumber {
     public static int numers(int[] arr ){
         int rr=0;

@@ -1,4 +1,4 @@
-package java_solutions.hashing;
+package java_solutions.Array.Medium;
 import java.util.HashMap;
 import java.util.Map;
 public class hashing {

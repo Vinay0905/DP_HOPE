@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Medium;
 public class SetMatrixZero {
 
     public static int[][] bruteforce(int[][] arr) {

@@ -1,4 +1,4 @@
-package java_solutions.Array;
+package java_solutions.Array.Easy;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package java_solutions.Array;
+package java_solutions.Array.Easy;
 
 public class maxConsecutiveOnes {
 

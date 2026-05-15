@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Medium;
 public class RerrageElemetsAccordingtoSign {
     public static int[] bruteForce(int[] arr){
         int n=arr.length;

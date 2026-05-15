@@ -1,5 +1,4 @@
-package java_solutions.playground;
-
+package java_solutions.Array.Medium;
 public class rotatoe_matrix {
     public static void rotate(int[][] matrix, int n, int m) {
 

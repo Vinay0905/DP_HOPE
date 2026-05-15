@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Easy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;

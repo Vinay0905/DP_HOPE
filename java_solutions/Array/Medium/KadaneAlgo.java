@@ -1,5 +1,4 @@
-package java_solutions.Array;
-
+package java_solutions.Array.Medium;
 import java.util.Arrays;
 
 public class KadaneAlgo {
@@ -19,7 +18,7 @@ public class KadaneAlgo {
 
     }
     public static int betterSolution(int[] nums){
-        int n=nums.length;
+        // int n=nums.length;
         int maxL=0;
         for(int i=0;i<nums.length;i++){
             int sum=0;
