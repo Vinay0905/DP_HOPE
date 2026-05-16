@@ -24,7 +24,8 @@ public class MajorityAccorssThearrays {
         return -1;
 
     }
-    // Moores Voting Algoritm - Moore’s Voting Algorithm is a smart way to find the majority element in an array — the number that appears more than half the time.
+    // Moores Voting Algoritm - Moore’s Voting Algorithm is a smart way to find the majority element in an array — 
+    // the number that appears more than half the time.
     // It works by keeping a candidate and a count: matching numbers increase the count, different numbers decrease it.
     // At the end, the remaining candidate is the majority element. Super efficient — only O(n) time and O(1) space.
     public static int optimalSolution(int[] arr){
