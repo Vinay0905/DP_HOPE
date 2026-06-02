@@ -1,7 +1,8 @@
 package java_solutions.Array.Medium;
 public class SortArraysZeroOneTwo {
     public static void bruteforce(int[] arr){
-        int cnt0=0,cnt1=0,cnt2=0;
+        int cnt0=0,cnt1=0;
+        int cnt2=0;
         int n=arr.length;
         for(int i=0;i<arr.length;i++){
             if(arr[i]==0)cnt0++;
