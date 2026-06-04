@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class moveZerostoEnd {
     
+        // Copies all non-zero values into a temporary array first.
+        // Then writes them back to the front and fills the remaining positions with zero.
         public static void bruteForce(int[] arr){
             int n=arr.length;
             int[] ne=new int[n];
@@ -23,6 +25,8 @@ public class moveZerostoEnd {
         
         }
 
+    // Finds the first zero and swaps later non-zero elements into that position.
+    // This moves all zeroes to the end while keeping non-zero elements in order.
     public static void OptimalSolution(int[] arr){
         int j=-1;
         int n=arr.length;

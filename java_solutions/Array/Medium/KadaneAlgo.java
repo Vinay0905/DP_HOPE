@@ -2,6 +2,8 @@ package java_solutions.Array.Medium;
 import java.util.Arrays;
 
 public class KadaneAlgo {
+    // Tries every subarray and recalculates its sum using a third loop.
+    // The maximum sum among all these subarrays is stored as the answer.
     public static int bruteForce(int[] nums){
         int maxL=0;
         for(int i=0;i<nums.length;i++){
@@ -17,6 +19,8 @@ public class KadaneAlgo {
         return maxL;
 
     }
+    // Fixes the start index and builds the subarray sum while moving the end index.
+    // This avoids recomputing the same sum from scratch for every subarray.
     public static int betterSolution(int[] nums){
         // int n=nums.length;
         int maxL=0;
@@ -36,7 +40,8 @@ public class KadaneAlgo {
         }
         return maxL;
     }
-    // Kadanes Algorithm
+    // Kadane's algorithm keeps the best running sum and drops it when it becomes negative.
+    // This finds the maximum subarray sum in a single pass.
     public static int optimalSolution(int[] arr){
         int max=Integer.MIN_VALUE;
         int sum=0;
@@ -48,6 +53,8 @@ public class KadaneAlgo {
         }
         return max;
     }
+    // Tracks the start and end indices whenever Kadane's running sum creates a better answer.
+    // After the scan, it copies and returns the maximum sum subarray.
     public static int[] ReturnTheSubarray(int[] arr){
         int max=Integer.MIN_VALUE;
         int start=0;

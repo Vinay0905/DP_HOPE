@@ -7,6 +7,8 @@ import java.util.List;
 public class LeadersInArray {
     
 
+    // For each element, checks all elements to its right.
+    // If nothing greater exists on the right side, that element is a leader.
     public static List<Integer> bruteforce(int[] arr){
         int n=arr.length;
         List<Integer> ans=new ArrayList<>();
@@ -24,6 +26,8 @@ public class LeadersInArray {
         return ans;
 
     }
+    // Scans from right to left while keeping the maximum value seen so far.
+    // Any element greater than that maximum is a leader.
     public static List<Integer> optimalSolution(int[] arr){
         List<Integer> ans=new ArrayList<>();
         int n=arr.length;

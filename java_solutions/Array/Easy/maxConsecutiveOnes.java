@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class maxConsecutiveOnes {
 
+    // Counts the current streak of 1s and resets it whenever a 0 appears.
+    // The maximum streak seen during the scan is returned.
     public static int function(int[] arr){
 
         int counter=0;
@@ -17,6 +19,8 @@ public class maxConsecutiveOnes {
         return max;
 
     }
+    // Scans the array while counting consecutive 1s and resetting the counter on 0.
+    // This keeps track of the longest block of 1s found so far.
     public static int bruteforce(int[] arr){
         int max=0;
         int cnter=0;

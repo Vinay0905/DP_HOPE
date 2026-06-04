@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class linear_search {
     
+    // Checks each index one by one until the target value is found.
+    // Returns the matching index, or -1 when the target is absent.
     public static int LinearSeach(int[] arr,int target){
         for(int i=0;i<arr.length;i++){
             if(arr[i]==target){

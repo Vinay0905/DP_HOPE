@@ -4,6 +4,8 @@ package java_solutions.Array.Easy;
 // import java.util.Set;
 
 public class removeDuplicates {
+    // Uses two pointers to overwrite duplicates in-place in a sorted array.
+    // The returned length tells how many unique values are now at the front.
     public static int removeduplicates(int[] nums) {
         if(nums.length==0)return 0;
         int i=0;

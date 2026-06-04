@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
+    // Checks every pair of elements to see whether their sum equals the target.
+    // Returns YES as soon as a valid pair is found.
     public static String bruteforce(int[] arr,int target){
         int n = arr.length;
         // Outer loop picks one element at a time
@@ -23,6 +25,8 @@ public class TwoSum {
 
 
     }
+    // Stores each number's index in a HashMap and looks for target - current.
+    // When the needed value already exists, the pair of indices is returned.
     public static int[] betterSolution(int[] nums,int target){
         Map<Integer,Integer> map=new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -35,6 +39,8 @@ public class TwoSum {
         }
         return new int[]{};
     }
+    // Sorts the array and uses two pointers from both ends to find the target sum.
+    // Moving the pointers adjusts the sum until the pair is found or exhausted.
     public static int[] optimalSolu(int[] arr,int target){
         Arrays.sort(arr);
         int l=0,r=arr.length-1;

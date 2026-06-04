@@ -1,5 +1,7 @@
 package java_solutions.Array.Medium;
 public class rotatoe_matrix {
+    // Rotates a square matrix by first transposing it and then reversing each row.
+    // Together, these two steps produce a 90-degree clockwise rotation.
     public static void rotate(int[][] matrix, int n, int m) {
 
     // Step 1: Transpose

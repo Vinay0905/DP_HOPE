@@ -1,6 +1,8 @@
 package java_solutions.Array.Easy;
 
 public class SecondLargest {
+    // First finds the largest element, then scans again for the biggest value smaller than it.
+    // This gives the second largest distinct value in the array.
     public static int Secondlargest(int[] arr){
 
         int largest=0;

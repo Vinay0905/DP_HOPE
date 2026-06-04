@@ -1,5 +1,7 @@
 package java_solutions.Array.Medium;
 public class SortArraysZeroOneTwo {
+    // Counts how many 0s, 1s, and 2s exist in the array.
+    // Then rewrites the array in sorted order using those counts.
     public static void bruteforce(int[] arr){
         int cnt0=0,cnt1=0;
         int cnt2=0;
@@ -14,6 +16,8 @@ public class SortArraysZeroOneTwo {
         for(int i=cnt0+cnt1;i<n;i++)arr[i]=2;
 
     }
+    // Uses the Dutch National Flag method with low, mid, and high pointers.
+    // It swaps values into their correct regions in a single pass.
     public static void betterOrOptimalSolution(int[] nums){
         int low=0,mid=0,high=nums.length-1;
         while(mid<=high){

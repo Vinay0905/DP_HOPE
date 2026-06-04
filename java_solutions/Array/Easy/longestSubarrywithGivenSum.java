@@ -6,6 +6,8 @@ import java.util.Map;
 public class longestSubarrywithGivenSum {
 
   
+    // Tracks prefix sums and stores their first positions in a HashMap.
+    // If prefixSum - k already exists, the subarray between those positions sums to k.
     public static int betteroApproch(int[] arr,int k){
         Map<Integer,Integer> map=new HashMap<>();
         int res=0;

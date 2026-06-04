@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LargestSumwithSubarrayK {
+    // Tries every starting point and keeps extending the subarray while maintaining its sum.
+    // Whenever the sum equals targ, update the longest length found.
     public static int bruteforce(int[] arr,int targ){
         int len=0;
         for (int start = 0; start < arr.length; start++) {
@@ -20,7 +22,8 @@ public class LargestSumwithSubarrayK {
         }
         return len;
     }
-    // Prefix Sum
+    // Uses prefix sums and a HashMap to find whether a previous prefix can form targ.
+    // This works even when negatives are present because it does not depend on shrinking a window.
     public static int betterSolution(int[] arr ,int targ){
         Map<Integer,Integer> map=new HashMap<>();
         int sum=0;
@@ -45,7 +48,8 @@ public class LargestSumwithSubarrayK {
 
         return maxLen;
     }
-    // Two pointer
+    // Uses a sliding window by expanding right and shrinking left when the sum becomes too large.
+    // This approach is meant for non-negative arrays where shrinking reduces the sum predictably.
     public static int optimalSolu(int[] arr, int targ){
         int i=0;
         int maxLen=0;

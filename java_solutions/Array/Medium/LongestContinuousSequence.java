@@ -4,6 +4,8 @@ import java.util.HashSet;
 
 
 public class LongestContinuousSequence {
+    // Searches the array linearly to check whether a specific number exists.
+    // This helper is used by the brute force consecutive sequence approach.
     public static boolean LinearSearch(int[] arr,int num){
         int n=arr.length;
         for(int i=0;i<n;i++){
@@ -12,6 +14,8 @@ public class LongestContinuousSequence {
         }
         return false;
     }
+    // Starts from every number and repeatedly searches for the next consecutive value.
+    // The longest chain formed this way is returned.
     public static int bruteforce(int[] arr ){
         
         
@@ -29,6 +33,8 @@ public class LongestContinuousSequence {
         }
         return longest;
     }
+    // Sorts the array first, then counts consecutive runs while skipping duplicates.
+    // The largest run length becomes the longest consecutive sequence.
     public static int bettersolution(int[] arr){
         Arrays.sort(arr);
         int n=arr.length;
@@ -51,6 +57,8 @@ public class LongestContinuousSequence {
 
     }
 
+    // Stores all numbers in a HashSet and only starts counting from sequence beginnings.
+    // Each sequence is expanded forward to find the maximum length.
     public static int optimalsolution(int[] arr){
         HashSet<Integer> hash=new HashSet<>();
         int n=arr.length;

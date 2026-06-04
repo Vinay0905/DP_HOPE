@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class countSubarraywithsum {
     
+    // Tries every subarray and calculates its sum using a third loop.
+    // Counts the subarrays whose sum equals the target.
     public static int bruteForce(int[] arr,int target){
         int count=0;
         int n=arr.length;
@@ -22,6 +24,8 @@ public class countSubarraywithsum {
 
     }
     
+    // Fixes a start index and extends the end index while maintaining a running sum.
+    // This counts target-sum subarrays without recalculating the whole sum each time.
     public static int betterSolution(int[] arr,int target){
         int count=0;
         int n=arr.length;
@@ -38,6 +42,8 @@ public class countSubarraywithsum {
         return count;
     }
 
+    // Uses prefix sums and counts how many earlier prefixes can form the target sum.
+    // The HashMap stores how often each prefix sum has appeared.
     public static int optimalSolution(int[] arr,int target){
         //prefix sum concept
         HashMap<Integer,Integer> map=new HashMap<>();

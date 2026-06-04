@@ -4,6 +4,8 @@ import java.util.List;
 
 public class NextPermutation {
 
+     // Recursively builds all possible permutations by choosing unused elements.
+     // This helper supports the brute force method.
      private static void generatePermutations(
             int[] arr,
             boolean[] used,
@@ -27,6 +29,8 @@ public class NextPermutation {
             }
         }
     }
+    // Generates all permutations of the array and prints them.
+    // This demonstrates the brute force idea before choosing the next arrangement.
     public static void bruteforce(int[] arr){
         List<List<Integer>> ans=new ArrayList<>();
         boolean[] used=new boolean[arr.length];
@@ -37,6 +41,8 @@ public class NextPermutation {
 
 
 
+    // Finds the first decreasing position from the right, swaps it with the next bigger value,
+    // then reverses the suffix to create the next lexicographical permutation.
     public static void optimalSolution(int[] arr){
         int idx=-1;
         int n=arr.length;
@@ -61,6 +67,8 @@ public class NextPermutation {
         reverse(arr, idx + 1, n - 1);
 
     }
+    // Reverses the selected part of the array in-place using two pointers.
+    // This is used to make the suffix as small as possible after the swap.
     private static void reverse(int[] arr, int left, int right) {
     while (left < right) {
         int temp = arr[left];

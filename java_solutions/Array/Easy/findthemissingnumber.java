@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class findthemissingnumber {
     
+    // Marks every present number in a hash-style frequency array.
+    // The first number whose frequency is zero is the missing number.
     public static int missingnumber(int[] arr){
 
         // HashMap<Integer,Integer> freq=new HashMap<>();
@@ -34,6 +36,8 @@ public class findthemissingnumber {
         return -1;
     }
     
+    // Uses the formula for the sum from 1 to max and subtracts the current array sum.
+    // The remaining difference is treated as the missing number.
     public static int bettersolution(int[] arr){
         int m=arr[0];
         int currsum=0;

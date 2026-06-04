@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class largestSubaaryaWithZeroSum {
     
+    // Tries every possible subarray and keeps a running sum for each start index.
+    // Whenever the sum becomes zero, update the maximum length and print that subarray.
     public static int bruteforce(int[] arr) {
         int n = arr.length;
         int maxLength = 0;
@@ -23,6 +25,8 @@ public class largestSubaaryaWithZeroSum {
         return maxLength;
     }
 
+    // Uses prefix sums and stores the first index where each prefix sum appeared.
+    // If the same prefix sum appears again, the elements between them sum to zero.
     public static int optimal(int[] arr) {
         HashMap<Integer, Integer> firstSeenIndex = new HashMap<>();
         int prefixSum = 0;
@@ -46,6 +50,8 @@ public class largestSubaaryaWithZeroSum {
         return maxLength;
     }
 
+    // Prints the subarray between the given start and end indices.
+    // This is used by the brute force method to show each zero-sum subarray found.
     private static void printSubarray(int[] arr, int start, int end) {
         System.out.print("[");
         for (int i = start; i <= end; i++) {

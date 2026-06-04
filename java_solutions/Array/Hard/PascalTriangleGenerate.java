@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class PascalTriangleGenerate {
+    // Builds Pascal's Triangle row by row, starting each row with 1s.
+    // Middle values are filled using the two values directly above them.
     public static List<List<Integer>> generate(int numRows) {
         // Result list to hold all rows
         List<List<Integer>> triangle = new ArrayList<>();

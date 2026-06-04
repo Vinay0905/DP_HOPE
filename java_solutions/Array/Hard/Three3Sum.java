@@ -9,6 +9,8 @@ import java.util.Set;
 
 public class Three3Sum {
     
+    // Checks every possible triplet and tests whether its sum is zero.
+    // Sorted triplets are stored in a set so duplicate answers are removed.
     public static List<List<Integer>> bruteforce(int[] arr){
         Set<List<Integer>> set=new HashSet<>();
         int n=arr.length;
@@ -28,6 +30,8 @@ public class Three3Sum {
         return new ArrayList<>(set);
     }
 
+    // Fixes one number and uses a HashSet to find the required third value for each second number.
+    // Each found triplet is sorted and stored in a set to keep only unique triplets.
 public static List<List<Integer>> betterSolu(int[] arr) {
     Set<List<Integer>> set=new HashSet<>();
     int n=arr.length;

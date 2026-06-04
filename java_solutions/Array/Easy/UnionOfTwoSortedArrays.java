@@ -5,6 +5,8 @@ import java.util.TreeMap;
 
 public class UnionOfTwoSortedArrays {
 
+    // Adds all values from both arrays into a TreeMap so duplicates collapse into one key.
+    // Reading the keys gives the sorted union of the two arrays.
     public static List<Integer> twosortedArray(int[] arr1,int[] arr2,int n ,int m){
         TreeMap<Integer,Integer> freq=new TreeMap<>();
         for(int i=0;i<n;i++){

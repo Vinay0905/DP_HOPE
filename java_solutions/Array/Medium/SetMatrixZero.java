@@ -1,6 +1,8 @@
 package java_solutions.Array.Medium;
 public class SetMatrixZero {
 
+    // Marks rows and columns with -1 whenever a zero is found.
+    // A second pass converts those marks into actual zeroes.
     public static int[][] bruteforce(int[][] arr) {
         int n = arr.length;
         int m = arr[0].length;
@@ -25,6 +27,8 @@ public class SetMatrixZero {
         return arr;
     }
 
+    // Marks all non-zero cells in the given row with -1.
+    // These marks are later changed to zero.
     private static void markRow(int[][] arr, int row, int m) {
         for (int j = 0; j < m; j++) {
             if (arr[row][j] != 0) {
@@ -33,6 +37,8 @@ public class SetMatrixZero {
         }
     }
 
+    // Marks all non-zero cells in the given column with -1.
+    // These marks are later changed to zero.
     private static void markColumn(int[][] arr, int col, int n) {
         for (int i = 0; i < n; i++) {
             if (arr[i][col] != 0) {
@@ -41,6 +47,8 @@ public class SetMatrixZero {
         }
     }
 
+    // Uses separate row and column arrays to remember which rows or columns contain zero.
+    // Then zeroes every cell that belongs to a marked row or column.
     public static int[][] betterSolution(int[][] arr) {
         int n = arr.length;
         int m = arr[0].length;
@@ -67,6 +75,8 @@ public class SetMatrixZero {
         return arr;
     }
 
+    // Uses the first row and first column as marker storage to avoid extra arrays.
+    // Separate flags protect the original zero state of the first row and column.
     public static int[][] optimalSolu(int[][] arr) {
         int n = arr.length;
         int m = arr[0].length;

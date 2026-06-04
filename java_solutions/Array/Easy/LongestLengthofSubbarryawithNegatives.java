@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LongestLengthofSubbarryawithNegatives {
+    // Checks every possible subarray by fixing a start index and extending the end index.
+    // The running sum is compared with targ to keep the maximum valid length.
     public static int bruteforce(int[] arr,int targ){
         // Stores the length of the longest subarray found with sum equal to targ.
         int max=0;
@@ -29,6 +31,8 @@ public class LongestLengthofSubbarryawithNegatives {
         return max;
     }
 
+    // Uses prefix sum with a HashMap storing the first index of each prefix sum.
+    // If sum - targ was seen before, the subarray between those indices has the target sum.
     public static int optimalSolu(int[] arr,int targ){
         // Stores the sum of elements traversed so far.
         int sum=0;

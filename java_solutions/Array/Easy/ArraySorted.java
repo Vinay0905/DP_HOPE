@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class ArraySorted {
     
+    // Checks every adjacent pair to confirm the array never decreases.
+    // If any previous element is greater than the current one, the array is not sorted.
     public static boolean sortedorNot(int[] arr){
         int n=arr.length;
         for(int i=1;i<n;i++){
@@ -15,6 +17,5 @@ public class ArraySorted {
         System.out.println(ans);
     }
 }
-
 
 

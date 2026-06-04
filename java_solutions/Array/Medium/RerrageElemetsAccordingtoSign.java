@@ -1,5 +1,7 @@
 package java_solutions.Array.Medium;
 public class RerrageElemetsAccordingtoSign {
+    // Separates positive and negative numbers into two arrays first.
+    // Then fills the answer by placing positives at even indices and negatives at odd indices.
     public static int[] bruteForce(int[] arr){
         int n=arr.length;
         int[] newarr=new int[n];
@@ -31,6 +33,8 @@ public class RerrageElemetsAccordingtoSign {
         // return new int[]{-1,-1};
         return newarr;
     }
+    // Places each number directly into its correct positive or negative slot while scanning once.
+    // Positive values go to even indices and negative values go to odd indices.
     public static int[] optimalSolution(int[] arr){
         int n=arr.length;
         int[] ans=new int[n];

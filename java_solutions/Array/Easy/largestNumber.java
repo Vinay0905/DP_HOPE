@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class largestNumber {
 
+    // Scans every element once and keeps updating the maximum value seen so far.
+    // At the end, max stores the largest number in the array.
     public static int largestNumer(int[] arr){
 
         int max=0;

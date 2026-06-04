@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class pascalTrianglePrintAnygivenRow {
+    // Finds a single Pascal's Triangle value using the iterative nCr calculation.
+    // This avoids building the entire triangle for one row-column position.
     public static long Finder(int r,int c){
         r = r - 1;
         c = c - 1;
@@ -14,11 +16,15 @@ public class pascalTrianglePrintAnygivenRow {
         }
         return res;
     }
+    // Prints the required row by calculating each column value separately.
+    // It repeatedly calls Finder for columns 1 through r.
     public static void bruteforce(int r) {
         for (int c = 1; c <= r; c++) {
             System.out.print(Finder(r, c) + " ");
         }
     }
+    // Builds the whole Nth row directly from the previous value in that same row.
+    // Each next value is calculated using the combination relation.
     public static  List<Long> getNthRow(int N) {
         // Result list to store the row
         List<Long> row = new ArrayList<>();

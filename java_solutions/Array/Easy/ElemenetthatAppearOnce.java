@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class ElemenetthatAppearOnce {
     
+    // For each element, count its frequency by scanning the whole array.
+    // The first element whose count is exactly one is the answer.
     public static int bruteforce(int[] arr){
         int n=arr.length;
         for(int i=0;i<n;i++){
@@ -20,6 +22,8 @@ public class ElemenetthatAppearOnce {
         }
         return 0;
     }
+    // Builds a frequency array using the maximum element as the size limit.
+    // Then returns the value whose stored frequency is one.
     public static int betterSolution(int[] arr){
         int maxEle=0;
         for(int i :arr){
@@ -40,6 +44,8 @@ public class ElemenetthatAppearOnce {
         
 
     }
+    // Stores frequencies in a HashMap so the method works without needing a fixed value range.
+    // After counting, it scans the original array to return the element that appeared once.
     public static int optimalSolution(int[] arr){
         Map<Integer,Integer> map=new HashMap<>();
         for(int i=0;i<arr.length;i++){

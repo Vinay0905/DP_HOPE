@@ -2,6 +2,8 @@ package java_solutions.Array.Hard;
 
 public class pascalTriangle {
     
+    // Multiplies all integers from 2 to n to calculate n factorial.
+    // This helper is used in the brute force nCr formula.
     public static long factorial(int n) {
         long fact = 1;
 
@@ -11,6 +13,8 @@ public class pascalTriangle {
 
         return fact;
     }
+    // Calculates the value at row r and column c using the direct nCr formula.
+    // It uses factorials, which is simple but does extra repeated work.
     public static long bruteforce(int n,int r,int c){
         // following nCr formula for findint the(r,c) term 
         r=r-1;
@@ -22,6 +26,8 @@ public class pascalTriangle {
 
     }
 
+    // Computes nCr iteratively without calculating full factorials.
+    // This builds the answer step by step using multiplication and division.
     public static long bettersolution(int r,int c){
         r = r - 1;
         c = c - 1;

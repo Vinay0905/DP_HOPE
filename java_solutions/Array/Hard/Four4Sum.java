@@ -9,6 +9,8 @@ import java.util.Set;
 
 public class Four4Sum {
     
+    // Checks every possible group of four elements and tests whether their sum is zero.
+    // Each valid quadruplet is sorted and stored in a set to avoid duplicates.
     public static List<List<Integer>> bruteforce(int[] arr){
         Set<List<Integer>> set=new HashSet<>();
         int n=arr.length;

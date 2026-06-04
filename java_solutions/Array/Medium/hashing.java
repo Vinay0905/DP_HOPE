@@ -26,6 +26,8 @@ public class hashing {
         System.out.println(157237491%9);
     }
 
+    // Creates a small HashMap entry for the given key and value.
+    // Then reads the value back using the same key.
     public static void creatHash(String value, int key){
         HashMap<Integer,String> hashTable = new HashMap<>();
 
@@ -33,6 +35,8 @@ public class hashing {
         hashTable.put(key,value);
         System.out.println(hashTable.get(key));
     }
+    // Counts how many times each integer appears using a HashMap.
+    // Then prints every value with its frequency.
     public static void frequencyOfElements(int[] arr){
         HashMap<Integer,Integer> hassh=new HashMap<>();
         for(int i:arr){
@@ -44,6 +48,8 @@ public class hashing {
         
 
     }
+    // Builds a prefix sum array where each position stores the sum up to that index.
+    // Prefix sums help answer range-sum style questions quickly.
     public static void prefixSum(int[] n){
         int a[]=new int[n.length];
         int prefix[]=new int[n.length];
@@ -52,6 +58,8 @@ public class hashing {
         }
 
     }
+    // Counts subarrays with sum k using prefix sums and frequency counts.
+    // For each current sum, previous sums equal to sum - k create valid subarrays.
     public int subarraySum(int[] nums, int k) {
         HashMap<Integer,Integer> map=new HashMap<>();
         map.put(0,1);
@@ -72,5 +80,4 @@ public class hashing {
 }
 
     
-
 

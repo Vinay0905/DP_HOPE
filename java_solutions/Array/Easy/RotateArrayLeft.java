@@ -2,6 +2,8 @@ package java_solutions.Array.Easy;
 
 public class RotateArrayLeft {
 
+    // Rotates the array left one step at a time by shifting elements and placing the first at the end.
+    // Repeats this process until the requested number of rotations is completed.
     public static int[] rotateArray(int[] arr ,int k){
         while(k>1){
             int temp=arr[0];

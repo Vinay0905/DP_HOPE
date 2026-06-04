@@ -1,6 +1,8 @@
 package java_solutions.Array.Medium;
 //121. Best Time to Buy and Sell Stock
 public class StockBuyAndSell {
+    // Tries every pair of buy and sell days where the sell day comes later.
+    // The highest profit from all possible pairs is returned.
     public static int bruteForce(int[] prices){
         int maxProfit = 0;
 
@@ -20,6 +22,8 @@ public class StockBuyAndSell {
         return maxProfit;
         
     }
+    // Tracks the minimum price seen so far and computes profit for each selling day.
+    // The best profit found during one left-to-right scan is returned.
     public static int optimalSolution(int[] arr){
         int profit=0,cost=0;
         int minimum=arr[0];

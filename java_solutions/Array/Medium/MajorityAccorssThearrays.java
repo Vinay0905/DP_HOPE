@@ -2,6 +2,8 @@ package java_solutions.Array.Medium;
 import java.util.HashMap;
 import java.util.Map;
 public class MajorityAccorssThearrays {
+    // Counts each element by comparing it with every other element.
+    // Returns the first value whose frequency is more than n/2.
     public static int bruteForce(int[] arr){
         int count;
         int n=arr.length;
@@ -14,6 +16,8 @@ public class MajorityAccorssThearrays {
         }
         return -1;
     }
+    // Uses a HashMap to count frequencies while traversing the array.
+    // As soon as any count crosses n/2, that element is returned.
     public static int betterSolution(int[] arr){
         int n=arr.length;
         Map<Integer,Integer> ma=new HashMap<>();
@@ -24,10 +28,8 @@ public class MajorityAccorssThearrays {
         return -1;
 
     }
-    // Moores Voting Algoritm - Moore’s Voting Algorithm is a smart way to find the majority element in an array — 
-    // the number that appears more than half the time.
-    // It works by keeping a candidate and a count: matching numbers increase the count, different numbers decrease it.
-    // At the end, the remaining candidate is the majority element. Super efficient — only O(n) time and O(1) space.
+    // Moore's Voting Algorithm keeps one candidate and cancels it against different values.
+    // The final verification step confirms the candidate appears more than n/2 times.
     public static int optimalSolution(int[] arr){
         int count=0,element=0;
         int n=arr.length;
