@@ -52,10 +52,12 @@ public class NextPermutation {
                 break;
             }
         }
+        //if decresing never dound then reverse the whole array [3,2,1]-> [1,2,3]
         if (idx == -1) {
         reverse(arr, 0, n - 1);
         return;
     }
+        // Find the next bigger element
         for(int i=n-1;i>=0;i--){
             if(arr[i]>arr[idx]){
                 int temp=arr[i];
