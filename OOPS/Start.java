@@ -1,4 +1,4 @@
-package java_solutions.OOPS;
+package OOPS;
 
 // import java.util.Arrays;
 
