@@ -56,6 +56,34 @@ public class deletenthtermInLL {
     }
 
 
+    public static ListNode optimalSol(ListNode head,int N){
+        if(head==null)return null;
+        ListNode slow=head;
+        ListNode fast=head;
+        for(int i=0;i<N;i++){
+            if (fast == null) {   // N > length of LinkedList
+                return head;
+            }
+            fast=fast.next;
+        }
+        if (fast == null) {
+
+        return head.next;
+
+    }
+        while (fast.next!=null) {
+            slow=slow.next;
+            fast=fast.next;
+
+
+        }
+        ListNode dummy=slow.next;
+        dummy.next=null;
+        slow.next=slow.next.next;
+        return head;
+        
+    }
+
     public static void main(String[] args) {
         List<Integer> arr = Arrays.asList(1, 2, 3, 4, 5);
         int N = 3;
