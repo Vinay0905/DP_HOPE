@@ -1,0 +1,35 @@
+--- Page 1 ---
+ 
+ 
+C.  SE LEC TI ON  PROCED UR E 
+CRITERIA for Sharing Student Database – SOFTWARE ENGINEER 
+Academic Criteria CGPA 8.0 and above with no history of arrears 
+Name of Each Rounds to Be Conducted Objective Test 
+Subjective Test 
+Interview 
+CRITERIA for Sharing Student Database – RESEARCH ENGINEER 
+Academic Criteria CGPA 8.0 and above with no history of arrears 
+ 
+Applicant credential list (Must fulfil at least two): 
+• Has academic publications at conferences 
+or symposiums relevant to Tech stack of 
+MulticoreWare 
+• Holds Competitive coding badges or Good 
+GitHub Profiles 
+• Can perform any live demo projects of 
+their own or labs (example: Web demo of 
+a project or a real robot demo, etc.) 
+• Has complex problem-solving capability 
+Name of Each Rounds to Be Conducted Objective Test 
+Subjective Test 
+Complex Subjective Test 
+Interview 
+Round Details (Yes/No) If Yes, Specify Mode (Face-To-Face/Written/Online) And Platform 
+Pre-Placement Talk 45 minutes  
+Objective Test 45 Minutes (Negative mark included) 
+Subjective Test 60 Minutes 
+Complex Subjective Test  60 Minutes 
+Interview (Technical/General)  Up to 2 rounds of technical interviews 
+Managerial / Technical telephonic interviews - 1 to 2 
+days 
+Selected Candidate List – within 1 to 2 days 

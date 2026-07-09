@@ -1,0 +1,60 @@
+Round 3 – Tech Interview 1
+Conducted virtually via Zoom meet. You can attend it from your place.
+
+Self introduction
+
+Explain one of the projects (questions were asked)
+
+Deadlock vs starvation (with real‑world examples)
+
+Linked list vs array
+
+Swap a and b without a third variable
+
+Hashmap: to count the number of occurrences (was asked to print count in sorted order)
+
+Idea on pointers in C
+
+Make sure to deliver answers confidently and explain pseudocodes and projects precisely. Screen sharing was asked for coding problems.
+
+Round 4 – Tech Interview 2
+Self introduction
+
+Was asked to explain my ML project (in particular) → a lot of questions (architecture, activation function, layers, etc.)
+
+Pseudocode: insert into linked list
+
+malloc() vs calloc()
+
+Stack vs queue
+
+What is inheritance?
+
+What is normalization and types of NFs?
+
+Both technical rounds happened on the same day. Have patience and revise concepts (if needed) during the wait time.
+
+Round 5 – Managerial Round
+Duration: 45 mins
+
+Self introduction
+
+Explain all projects briefly
+
+Questions were mostly asked about the ML project I did
+
+Asked about my roles in projects
+
+What is your favorite language and why?
+
+Difference between C++ and Java
+
+Asked if I worked with projects on hardware
+
+Asked about the MOOC course I had done
+
+What is a dangling pointer?
+
+What is the overflow condition of a circular queue?
+
+After technical questions, the interviewer focused on basic questions like whether I was okay for relocation and similar topics. The interviewer explained about the company and the projects they worked on.

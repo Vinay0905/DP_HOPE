@@ -1,0 +1,47 @@
+--- Page 1 ---
+Naga Vinay Avvaru
+nagavinay.avvaru@gmail.com | +91-7702296727 | LinkedIn | GitHub
+EDUCATION
+B.E. in Electronics and Communication Engineering
+2023–2027
+ST. JOSEPH’SINSTITUTE OFTECHNOLOGY CGPA: 8.67
+EXPERIENCE
+Agentic AI Intern
+Nov 2025 – Jan 2026
+ZEKAPVTSOLUTIONS
+• Designed and implementedagentic AIworkflows andsafety guardrailswithin backend microservices.
+• Improved protection againstprompt injectionand related attacks by47%, increasing effectiveness from10% to 57%.
+Vision Systems Intern
+Mar 2025 – May 2025
+SPHERULERSOLUTIONS
+• Worked on military-grade camera calibration for boresight alignment systems by estimatingintrinsicandextrinsicparameters.
+• Reduced reprojection error from0.15 to 0.05, improving alignment accuracy by3×for high-precision targeting applications.
+ACHIEVEMENTS
+Team’s AI Expert – PreserVion
+Internal Hackathon
+SIH SHORTLISTING TOP16 | PRIZE:INR 5,000
+• Developed aRAG-poweredmultilingual voice assistant for customer navigation and negotiation across10 languages.
+SKILLS
+Languages & Tools:Python, Java
+ML Frameworks:TensorFlow, PyTorch, Scikit-learn, LangChain, LangGraph
+Data Science:NumPy, Pandas, Matplotlib, Seaborn, MLflow
+AI/ML Concepts:Supervised learning, unsupervised learning, agentic AI, multi-agent orchestration, memory, and tool-calling in agents
+PROJECTS
+Plagiarism – CODEPRO
+• Built a modular plagiarism detection system usingwinnowing,k-gram fingerprinting, andRabin–Karp hashingfor academic code assessments.
+• Implemented code normalization to detect lazy plagiarism and designed a scalableCLIwith batchCSVprocessing and logging.
+Regression – ML End-to-end Project
+• Engineered an end-to-endMLOpspipeline with feature engineering,XGBoosttraining,Optunatuning, andMLflowexperiment tracking.
+• Deployed a containerizedFastAPIbackend andStreamlitdashboard onGoogle Cloud RunwithSupabaseintegration.
+Fish Detection – YOLOv8 (50+ GitHub Stars)
+• Trained a customYOLOv8model for real-time fish detection in underwater footage and optimized it for low-light and turbid conditions.
+CERTIFICATES
+Microsoft Azure AI Fundamentals (AI-900)
+Feb 11, 2026
+MICROSOFTAZURE VIEWCREDENTIAL
+ChatGPT Prompt Engineering for Developers
+Oct 2025
+DEEPLEARNING.AI VIEWCREDENTIAL
+Project Ambient Agents with LangGraph
+Sep 2025
+LANGCHAIN VIEWCREDENTIAL
